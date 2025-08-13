@@ -38,7 +38,7 @@ SimpleEQAudioProcessorEditor::~SimpleEQAudioProcessorEditor()
 void SimpleEQAudioProcessorEditor::paint (juce::Graphics& g)
 {
     using namespace juce;
-    // (Our component is opaque, so we must completely fill the background with a solid colour)
+    /* (Our component is opaque, so we must completely fill the background with a solid colour)*/
     g.fillAll (Colours::black);
 
     auto bounds = getLocalBounds();
