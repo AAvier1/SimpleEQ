@@ -69,12 +69,13 @@ juce::Timer
     void timerCallback() override;
     void paint(juce::Graphics& g) override;
     
-    
 private:
     SimpleEQAudioProcessor& audioProcessor;
     juce::Atomic<bool> parametersChanged { false };
     
     MonoChain monoChain;
+    
+    void updateChain();
 };
 
 //==============================================================================
