@@ -26,11 +26,11 @@ void LookAndFeel::drawRotarySlider(juce::Graphics & g,
     auto enabled = slider.isEnabled();
     
     // Color for the knobs
-    g.setColour(enabled ? Colour(149u, 18u, 167u) : Colours::darkgrey );
+    g.setColour(enabled ? Colour(47u, 72u, 88u) : Colours::darkgrey );
     g.fillEllipse(bounds);
     
-    g.setColour(enabled ? Colour(88u, 154u, 1u) : Colours::grey);
-    g.drawEllipse(bounds, 1.f);
+    g.setColour(enabled ? Colour(0u, 94u, 116u) : Colours::grey);
+    g.drawEllipse(bounds, 2.f);
     
     if( auto* rswl = dynamic_cast<RotarySliderWithLabels*>(&slider))
     {
